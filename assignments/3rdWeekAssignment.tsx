@@ -57,7 +57,7 @@ export default function Component() {
         className="space-y-4"
       >
         {plans.map((plan) => (
-          <Card key={plan.name} className={`${selectedPlan.name === plan.name ? 'ring-2 ring-blue-500' : ''}`}>
+          <Card key={plan.name} className={selectedPlan.name === plan.name ? 'ring-2 ring-blue-500' : ''}>
             <CardHeader>
               <CardTitle>{plan.name}</CardTitle>
               <CardDescription>{plan.description}</CardDescription>
