@@ -1,0 +1,15 @@
+# sample.aider.conf.yml
+
+# API configuration for Aider
+openai:
+  # Set the OpenAI model and API key (if you're using Aider for GPT-based assistance)
+  model: gpt-4  # or gpt-4 if you have access
+  api_key: ${OPENAI_API_KEY}  # OpenAI API key here
+
+# Groq API Configuration
+groq:
+  api_key: ${GROQ_API_KEY}  # Groq API key here
+  model: "llama3-8b-8192"        # Groq model ID if needed
+
+# Directory where Aider should apply enhancements
+assignments_directory: "assignments/"
