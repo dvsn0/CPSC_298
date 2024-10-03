@@ -29,4 +29,3 @@ to fulfil my request of separate pages with differing conditions but I was not a
 ![image](https://github.com/user-attachments/assets/c9a8c919-318f-4354-81d4-68137712f785)
 ![image](https://github.com/user-attachments/assets/4282bcd9-c9e4-4462-96a3-9ee542e2ec0b)
 ![image](https://github.com/user-attachments/assets/6e14861f-078e-4cf2-8a65-53bf5e6a09ac)
-
