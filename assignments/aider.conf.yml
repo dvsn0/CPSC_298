@@ -13,3 +13,5 @@ groq:
 
 # Directory where Aider should apply enhancements
 assignments_directory: "assignments/"
+
+#testing discord integration
