@@ -39,7 +39,8 @@ export default function Component() {
   const [sshAlias, setSSHAlias] = useState('')
 
   const handlePlanSelect = (planName: string) => {
-    setSelectedPlan(plans.find(plan => plan.name === planName) || plans[0])
+    const selectedPlan = plans.find(plan => plan.name === planName) || plans[0]
+    setSelectedPlan(selectedPlan)
     setCurrentPage('gpu-customization')
   }
 
@@ -56,7 +57,7 @@ export default function Component() {
         className="space-y-4"
       >
         {plans.map((plan) => (
-          <Card key={plan.name} className={`${selectedPlan.name === plan.name ? 'ring-2 ring-blue-500' : ''}`}>
+          <Card key={plan.name} className={selectedPlan.name === plan.name ? 'ring-2 ring-blue-500' : ''}>
             <CardHeader>
               <CardTitle>{plan.name}</CardTitle>
               <CardDescription>{plan.description}</CardDescription>
@@ -150,7 +151,7 @@ export default function Component() {
             CloudML Platform
           </h1>
           <p className="mt-5 max-w-xl mx-auto text-xl text-gray-500">
-            Build, train, and deploy machine learning models with ease using our cloud-based platform.
+            {`Build, train, and deploy machine learning models with ease using our cloud-based platform.`}
           </p>
         </div>
 
@@ -193,4 +194,5 @@ export default function Component() {
       </div>
     </div>
   )
+  
 }
